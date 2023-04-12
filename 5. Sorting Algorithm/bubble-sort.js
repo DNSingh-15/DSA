@@ -15,3 +15,17 @@ for (i = 0; i < arr.length; i++) {
 console.log(arr)
 
 
+//  this is not bubble sort
+//  this is my own method .. and this is also works on every array
+let array = [-4,-5,-21,-1,-6,-7,-3];
+
+for (let i = 0; i < array.length; i++) {
+  if (array[i] > array[i + 1]) {
+    let temp = array[i];
+    array[i] = array[i + 1];
+    array[i + 1] = temp;
+
+    i = -1;
+  }
+}
+console.log(array);
